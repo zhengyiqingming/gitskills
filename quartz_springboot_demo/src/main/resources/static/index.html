@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="text-align: center">
+    <h1>调度任务管理平台</h1>
+    <hr>
+    <h3>新增调度任务</h3>
+    <form action="/add" method="post">
+        任务名:<input type="text" name="jobName">
+        任务组:<input type="text" name="jobGroup">
+        触发器名:<input type="text" name="triggerName">
+        触发器组:<input type="text" name="triggerGroup">
+        cron表达式:<input type="text" name="cronExpression">
+        <input type="submit" value="新增调度">
+    </form>
+</div>
+</body>
+</html>

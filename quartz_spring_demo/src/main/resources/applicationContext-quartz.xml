@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--创建JobDetail-->
+    <bean id="jobDetail" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+        <!--指定任务类-->
+        <property name="jobClass" value="com.baizhi.job.MyJob"></property>
+        <property name="name" value="myJob"></property>
+        <property name="group" value="g1"></property>
+        <property name="durability" value="true" />
+    </bean>
+    <!--注意 spring quartz整合 ⼀个trigger只可以绑定⼀个JobDetail ⼀个jobDetail可
+    以被多个Trigger所使⽤-->
+    <bean id="trigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <!--绑定JobDetail-->
+        <property name="name" value="myTrigger"></property>
+        <property name="group" value="g1"></property>
+        <property name="cronExpression" value="0/5 * * * * ? *"></property>
+        <!--绑定-->
+        <property name="jobDetail" ref="jobDetail"></property>
+    </bean>
+
+    <!--注册scheduler-->
+    <bean id="scheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="trigger"></ref>
+            </list>
+        </property>
+    </bean>
+</beans>
