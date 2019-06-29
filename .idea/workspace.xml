@@ -1,46 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30213e02-b261-4e09-9a2e-ee0a313b0f7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/IKAnalyzer.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/annotations/FlushCache.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/annotations/RedisCache.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/aspects/RedisCacheAspect.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/beans/Beans.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/controller/BookController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/entity/Book.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/lucene/dao/BookLuceneDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/lucene/dao/BookLuceneDAOImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/mapper/AdminDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/mapper/AlbumDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/mapper/ArticleDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/mapper/CarouselDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/mapper/ChapterDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/mapper/GuruDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/mapper/MenuDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/mapper/UserDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/service/BookService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/service/BookServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/util/LuceneUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ext.dic" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/stopword.dic" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/baizhi/Send.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/baizhi/TestJedis.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/baizhi/TestSms.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/baizhi/TestTimer$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/baizhi/TestTimer$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/baizhi/TestTimer.class" afterDir="false" />
+    <list default="true" id="30213e02-b261-4e09-9a2e-ee0a313b0f7f" name="Default Changelist" comment="持明法洲（陈燕南代码）">
+      <change afterPath="$PROJECT_DIR$/../springboot_day1/src/main/java/com/baizhi/TestUser.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../springboot_day1/src/main/webapp/echars.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_day1/src/main/webapp/echars1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_day1/src/main/webapp/echars2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_day1/src/main/webapp/echars3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_day1/src/main/webapp/echars4.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_day1/src/main/webapp/js/china.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_day1/src/main/webapp/js/echarts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_day1/src/main/webapp/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_day1/src/main/webapp/js/scatter-map.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ssm/src/test/java/com/baizhi/test/TestUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,12 +27,24 @@
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baizhi/sql/cmfz.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2268" />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="58" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="427" />
+    <option name="y" value="72" />
     <option name="width" value="1346" />
     <option name="height" value="734" />
   </component>
@@ -76,6 +61,48 @@
             <path>
               <item name="cmfz" type="b2602c69:ProjectViewProjectNode" />
               <item name="cmfz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmfz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmfz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmfz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmfz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmfz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmfz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmfz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmfz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="baizhi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmfz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmfz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="baizhi" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmfz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmfz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -124,7 +151,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561777702609</updated>
-      <workItem from="1561777708096" duration="1393000" />
+      <workItem from="1561777708096" duration="3610000" />
     </task>
     <task id="LOCAL-00001" summary="持明法洲（陈燕南代码）">
       <created>1561779072956</created>
@@ -133,14 +160,21 @@
       <option name="project" value="LOCAL" />
       <updated>1561779072956</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="持明法洲（陈燕南代码）">
+      <created>1561779232823</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561779232823</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1393000" />
+    <option name="totallyTimeSpent" value="3610000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="0" width="1346" height="734" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -148,7 +182,7 @@
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25660965" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" />
@@ -156,7 +190,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -182,6 +216,13 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="持明法洲（陈燕南代码）" />
     <option name="LAST_COMMIT_MESSAGE" value="持明法洲（陈燕南代码）" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baizhi/sql/cmfz.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2268" />
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
