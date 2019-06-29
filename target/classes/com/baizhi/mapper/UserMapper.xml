@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.dao.UserDao">
+
+	
+	<select id="queryItem" resultType="com.baizhi.entity.User">
+		select name,age,sex from user where id=#{id}
+	</select>
+
+
+	<!--<insert id="insertItem"  parameterType="java.util.List" useGeneratedKeys="true" keyProperty="id">-->
+		<!--insert into user (name,age,sex)-->
+		<!--values-->
+		<!--<foreach collection="users" item="user" index="index"-->
+				 <!--separator=",">-->
+			<!--(#{user.name,jdbcType=VARCHAR},#{user.age,jdbcType=Integer},#{user.sex,jdbcType=Integer})-->
+		<!--</foreach>-->
+	<!--</insert>`-->
+
+
+</mapper>

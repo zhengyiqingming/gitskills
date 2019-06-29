@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.dao.GuruDao">
+	 <resultMap type="com.baizhi.entity.Guru" id="MyGuru">
+		<id column="id" property="id"/>
+		<result column="name" property="title"/>
+		<result column="headPic" property="headPic"/>
+		<result column="gender" property="gender"/>
+		<collection property="children" ofType="com.baizhi.entity.Article">
+			<id column="cid" property="id"/>
+			<result column="ctitle" property="title"/>
+			<result column="ccontent" property="content"/>
+			<result column="cinsertimgPath" property="insertimgPath"/>
+			<result column="cpublishDate" property="publishDate"/>
+			<result column="cguruId" property="guruId"/>
+		</collection>
+  </resultMap>	
+	
+	<!-- 查所有 -->
+	 <select id="queryItems" resultMap="MyGuru">
+	 	select a.id,a.name,a.headPic,a.gender,
+	 	b.id cid,b.title ctitle,b.content ccontent,b.insertimgPath cinsertimgPath,b.publishDate cpublishDate,b.guruId cguruId
+	 	from guru a left join article b on b.guruId=a.id order by a.id asc
+	 	
+	 </select>
+	
+	<insert id="insertItem" parameterType="com.baizhi.entity.Guru">
+		insert into guru(name,headPic,gender) 
+		values(#{title},#{headPic},#{gender})
+	</insert>
+	
+	
+	<select id="queryItem" parameterType="int" resultMap="MyGuru">
+		select a.id,a.title,a.name,a.headPic,a.gender,
+	 	b.id cid,b.title ctitle,b.content ccontent,b.insertimgPath cinsertimgPath,b.publishDate cpublishDate,b.guruId cguruId
+	 	from guru a left join article b on b.guruId=a.id order by a.id asc
+	 	where a.id=#{id}
+	</select>
+	
+
+	
+</mapper>

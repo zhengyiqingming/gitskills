@@ -1,0 +1,22 @@
+server:
+  port: 8989
+  context-path: /cmfz
+  jsp-servlet:
+    init-parameters:
+      development: true
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    type: org.apache.commons.dbcp.BasicDataSource
+    url: jdbc:mysql://localhost:3306/cmfz
+    username: root
+    password: root
+
+
+mybatis:
+  mapper-locations: classpath:com/baizhi/mapper/*.xml
+  type-aliases-package: com.baizhi.entity

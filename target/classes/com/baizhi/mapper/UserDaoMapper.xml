@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.dao.UserDao">
+	
+	<!-- 登录 -->
+	<select id="queryOneUser" resultType="com.baizhi.entity.User">
+		select id,phoneNum,username,password,salt,dharmName,gender,headPic,province,city,sign,status,date
+		from user
+		where username=#{username} and password=#{password} and status='1'
+	</select>
+	
+	<!-- 查询一个 -->
+	<select id="queryOneItem" resultType="com.baizhi.entity.User" parameterType="int">
+		select id,phoneNum,username,password,salt,dharmName,gender,headPic,province,city,sign,status,date
+		from user
+		where id=#{id} 
+	</select>
+	
+	<!-- 修改信息 -->
+	<update id="updateItem" parameterType="com.baizhi.entity.User">
+		update user set phoneNum=#{phoneNum},username=#{username},password=#{password},salt=#{salt},dharmName=#{dharmName},
+						gender=#{gender},headPic=#{headPic},province=#{province},city=#{city},sign=#{sign},
+						status=#{status},date=#{date}
+		where id=#{id}
+	</update>
+
+	<!-- 注册 -->
+	<insert id="insertItem" parameterType="com.baizhi.entity.User">
+		insert into user (phoneNum,username,password,salt,dharmName,gender,headPic,province,city,sign,status,date) 
+					values(#{phoneNum},#{username},#{password},#{salt},#{dharmName},#{gender},#{headPic},#{province},#{city},#{sign},'1',#{date})
+	</insert>
+	<!-- 删除 -->
+	<delete id="deleteItem" parameterType="int">
+		update user set status=0
+		where id=#{id}
+	</delete>
+	
+	<!-- 查所有 -->
+	<select id="queryItems" resultType="com.baizhi.entity.User">
+		select id,phoneNum,username,password,salt,dharmName,gender,headPic,province,city,sign,status,date
+		from user
+		where status='1'
+	</select>
+	
+	<!-- 统计条数 -->
+ 	<select id="count" resultType="int">
+ 		select count(*)
+ 		from user
+ 	</select>
+ 	
+ 	<!-- 分页 -->
+ 	<select id="queryByPage" resultType="com.baizhi.entity.User">
+		select id,phoneNum,username,password,salt,dharmName,gender,headPic,province,city,sign,status,date
+		from user
+		order by id desc
+        limit ${(curPage-1)*pageSize},${pageSize}	 
+	</select>
+</mapper>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.dao.CarouselDao">
+ 	<!-- 添加 -->
+ 	<insert id="insertItem" parameterType="com.baizhi.entity.Carousel">
+ 		insert into carousel (title,imgPath,intro,status,date) values(#{title},#{imgPath},#{intro},'y',#{date})
+ 	</insert>
+ 	
+	<!-- 删除 -->
+	<delete id="deleteItem" parameterType="int">
+		delete from carousel
+		where id=#{id}
+	</delete>
+	
+	<!-- 修改 -->
+	<update id="updateItem" parameterType="com.baizhi.entity.Carousel">
+		update carousel set title=#{title},imgPath=#{imgPath},intro=#{intro},status=#{status},date=#{date}
+		where id=#{id}
+	</update>
+	
+	<!-- 查一 -->
+	<select id="queryOneItem" resultType="com.baizhi.entity.Carousel" parameterType="int">
+		select id,title,imgPath,intro,status,date
+		from carousel
+		where id=#{id}
+	</select>
+	
+	<!-- 查所有 -->
+	<select id="queryItems" resultType="com.baizhi.entity.Carousel">
+		select id,title,imgPath,intro,status,date
+		from carousel
+	</select>
+	
+	 <!-- 统计条数 -->
+ 	<select id="count" resultType="int">
+ 		select count(*)
+ 		from carousel
+ 	</select>
+ 	
+ 	<!-- 分页 -->
+ 	<select id="queryByPage" resultType="com.baizhi.entity.Carousel">
+ 		select id,title,imgPath,intro,status,date
+		from carousel
+		order by id desc
+		limit ${(curPage-1)*pageSize},${pageSize}
+ 	</select>
+</mapper>
