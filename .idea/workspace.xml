@@ -1,7 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30213e02-b261-4e09-9a2e-ee0a313b0f7f" name="Default Changelist" comment="" />
+    <list default="true" id="30213e02-b261-4e09-9a2e-ee0a313b0f7f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/IKAnalyzer.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/annotations/FlushCache.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/annotations/RedisCache.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/aspects/RedisCacheAspect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/beans/Beans.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/controller/BookController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/entity/Book.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/lucene/dao/BookLuceneDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/lucene/dao/BookLuceneDAOImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/mapper/AdminDaoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/mapper/AlbumDaoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/mapper/ArticleDaoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/mapper/CarouselDaoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/mapper/ChapterDaoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/mapper/GuruDaoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/mapper/MenuDaoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/mapper/UserDaoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/service/BookService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/service/BookServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baizhi/util/LuceneUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ext.dic" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/stopword.dic" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/baizhi/Send.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/baizhi/TestJedis.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/baizhi/TestSms.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/baizhi/TestTimer$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/baizhi/TestTimer$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/baizhi/TestTimer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_day1/src/main/webapp/echars.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm/src/test/java/com/baizhi/test/TestUser.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -9,6 +49,10 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -26,7 +70,17 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cmfz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmfz" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -70,15 +124,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561777702609</updated>
-      <workItem from="1561777708096" duration="803000" />
+      <workItem from="1561777708096" duration="1393000" />
     </task>
+    <task id="LOCAL-00001" summary="持明法洲（陈燕南代码）">
+      <created>1561779072956</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561779072956</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="803000" />
+    <option name="totallyTimeSpent" value="1393000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="506" y="22" width="1346" height="735" extended-state="0" />
+    <frame x="58" y="0" width="1346" height="734" extended-state="0" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -116,6 +178,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="持明法洲（陈燕南代码）" />
+    <option name="LAST_COMMIT_MESSAGE" value="持明法洲（陈燕南代码）" />
   </component>
   <component name="masterDetails">
     <states>
